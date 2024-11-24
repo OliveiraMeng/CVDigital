@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primeira: #1874b4;
+    --cor-segunda: #22d4fd;
+    --cor-terceira: white;
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    background-color: var(--cor-terceira);
+    justify-content: center;
+    flex-direction: column;
+    margin: 1% 0% 0% 0%;
+}
+p{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primeira);
+    margin: 1%;
+}
+h2{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-segunda);
+    font-size: 2rem;
+    margin: 5% 0% 1% 0%;
+}
+h3{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primeira);
+    font-size: 1rem;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 10% 0% 10%;
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-terceira);
+}
+.cabecalho_imagem{
+    color: var(--cor-segunda);
+    font-size: 3rem;
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 1rem;
+}
+.cabecalho_menu_link{
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--cor-segunda);
+}
+.cabecalho_icones{
+    display: flex;
+    gap: 10%;
+}
+/*corpo*/
+main{
+    margin: 1%;
+}
+.home_titulo{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-size: 3.5rem;
+    color: var(--cor-primeira);
+}
+.home_informacao_pessoal{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--fonte-primaria);
+    align-items: center;
+    gap: 2rem;
+}
+.home_informacao_pessoal_dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 10% 0% 0% 0%;
+    gap: 50%;  
+}
+.home_informacao_pessoal_whatsapp{
+    display: flex;
+    flex-direction: row;
+}
+.home_informacao_foto{
+    display: flex;
+    width: 20rem;
+    background: var(--cor-segunda)
+}
+/*rodape*/
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 0% 0%;
+    background: var(--cor-segunda)
+}
+.rodape_texto{
+    margin: 1%;
+    color:var(--cor-terceira);
+    font-size: 80%;
+}
+
+@media (max-width: 630px) {
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+.cabecalho_imagem{
+    font-size: 2rem;
+}
+.home_informacao_pessoal{
+    flex-direction: column;
+}
+.home_titulo{
+    font-size: 2rem;
+}
+}
